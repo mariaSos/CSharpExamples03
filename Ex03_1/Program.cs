@@ -8,14 +8,13 @@ string strOut = "";
 //Добавлена проверка, чтобы убрать предупреждение о разыменовывании ссылки
 if (strIn is not null)
 {
-    int length = strIn.Length;
-    if (length != 5)
+    if (strIn.Length != 5)
     {
         System.Console.WriteLine("Введено не пятизначное число!");
     }
     else
     {
-        for (int i = length-1; i >=0; i--)
+        for (int i = strIn.Length-1; i >=0; i--)
     {
         strOut = strOut + strIn[i];
     }
